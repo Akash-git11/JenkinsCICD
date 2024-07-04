@@ -40,7 +40,7 @@ public class LoginPage extends MyUtility {
             log.error("URL loading failed");
         } catch (Exception e) {
             System.out.println(e);
-            System.out.println("URLl loading failed");
+            System.out.println("URLllL loading failed");
 
         }
     }
