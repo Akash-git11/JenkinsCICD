@@ -22,7 +22,7 @@ public class Base {
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         
 		lp = new LoginPage(driver);
 		return lp;

@@ -12,7 +12,7 @@ public class LoginPage extends MyUtility {
 
 
     WebDriver driver;
-    public static Logger log;
+    private static Logger log;
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -36,7 +36,7 @@ public class LoginPage extends MyUtility {
 
         try {
             driver.get("https://www.saucedemo.com/v1/");
-            System.out.println("URL is Loaded");
+         
             log.error("URL loading failed");
         } catch (Exception e) {
             System.out.println(e);
@@ -55,7 +55,7 @@ public class LoginPage extends MyUtility {
 
     public Products clickLoginButton() {
         click(btnLogin);
-        Products products = new Products(driver);
-        return products;
+        Products products;
+        return products = new Products(driver);
     }
 }
